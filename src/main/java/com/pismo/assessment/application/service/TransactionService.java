@@ -3,7 +3,6 @@ package com.pismo.assessment.application.service;
 import com.pismo.assessment.domain.exception.AccountNotFoundException;
 import com.pismo.assessment.domain.model.OperationType;
 import com.pismo.assessment.domain.model.Transaction;
-import com.pismo.assessment.infrastructure.persistence.entity.TransactionEntity;
 import com.pismo.assessment.infrastructure.persistence.mapper.TransactionMapper;
 import com.pismo.assessment.infrastructure.persistence.repository.AccountRepository;
 import com.pismo.assessment.infrastructure.persistence.repository.TransactionRepository;
@@ -12,7 +11,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 @Slf4j

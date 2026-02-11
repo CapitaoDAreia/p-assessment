@@ -3,7 +3,6 @@ package com.pismo.assessment.application.service;
 import com.pismo.assessment.domain.exception.AccountNotFoundException;
 import com.pismo.assessment.domain.exception.DuplicateDocumentException;
 import com.pismo.assessment.domain.model.Account;
-import com.pismo.assessment.infrastructure.persistence.entity.AccountEntity;
 import com.pismo.assessment.infrastructure.persistence.mapper.AccountMapper;
 import com.pismo.assessment.infrastructure.persistence.repository.AccountRepository;
 import lombok.RequiredArgsConstructor;
