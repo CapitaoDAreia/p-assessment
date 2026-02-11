@@ -24,7 +24,7 @@ public class AccountService {
 
         if (accountRepository.existsByDocumentNumber(account.getDocumentNumber())) {
             log.warn("Account with document number {} already exists", account.getDocumentNumber());
-            throw new DuplicateDocumentException("Account with existing document number");
+            throw new DuplicateDocumentException(account.getDocumentNumber());
         }
 
         var entity = accountMapper.toEntity(account);

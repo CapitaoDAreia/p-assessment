@@ -18,7 +18,7 @@ public class TransactionEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "transaction_id")
+    @Column(name = "transaction_id", columnDefinition = "BIGINT")
     @EqualsAndHashCode.Include
     private Long transactionId;
 

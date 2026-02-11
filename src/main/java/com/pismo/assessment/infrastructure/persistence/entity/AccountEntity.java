@@ -15,7 +15,7 @@ public class AccountEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "account_id")
+    @Column(name = "account_id", columnDefinition = "BIGINT")
     @EqualsAndHashCode.Include
     private Long accountId;
 
