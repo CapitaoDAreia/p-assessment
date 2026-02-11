@@ -1,9 +1,6 @@
--- Pismo Assessment Database Schema
--- PostgreSQL 15+
-
 -- Create accounts table
 CREATE TABLE IF NOT EXISTS accounts (
-    account_id SERIAL PRIMARY KEY,
+    account_id BIGSERIAL PRIMARY KEY,
     document_number VARCHAR(255) NOT NULL UNIQUE
 );
 
@@ -15,7 +12,7 @@ CREATE TABLE IF NOT EXISTS operation_types (
 
 -- Create transactions table
 CREATE TABLE IF NOT EXISTS transactions (
-    transaction_id SERIAL PRIMARY KEY,
+    transaction_id BIGSERIAL PRIMARY KEY,
     account_id BIGINT NOT NULL,
     operation_type_id INTEGER NOT NULL,
     amount DECIMAL(19, 2) NOT NULL,
